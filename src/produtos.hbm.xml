@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE hibernate-mapping PUBLIC  
+		  "-//Hibernate/Hibernate Mapping DTD 3.0//EN"  
+		  "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">   
+
+<hibernate-mapping>
+	<class name="br.com.fiap.entity.Produtos" table="produtos">
+		<id name="id" type="int">
+			<column name="IDPRODUTO"/>
+			<generator class="assigned"/>
+		</id>
+		<property name="nome" type="string">
+			<column name="NOME" length="45"/>
+		</property>
+		<property name="vendas" type="int">
+			<column name="VENDAS"/>
+		</property>
+		<property name="preco" type="double">
+			<column name="PRECO"/>
+		</property>
+	</class>
+</hibernate-mapping>
+	
